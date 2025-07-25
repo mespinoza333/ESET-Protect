@@ -1,0 +1,1 @@
+netstat -an > "C:\Users\mespinoza_vm\Desktop\informe\puertos.txt"
