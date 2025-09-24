@@ -17,7 +17,7 @@ try {
         }
     }
 } catch {
-    Write-Host "⚠️ Error al consultar aplicaciones por WMI: $($_)" -ForegroundColor Red
+    Write-Host " Error al consultar aplicaciones por WMI: $($_)" -ForegroundColor Red
 }
 
 # Parte 2: Buscar en el registro y desinstalar
@@ -53,8 +53,8 @@ foreach ($path in $registryPaths) {
             }
         }
     } catch {
-        Write-Host "⚠ Error al leer el registro: $($_)" -ForegroundColor Red
+        Write-Host " Error al leer el registro: $($_)" -ForegroundColor Red
     }
 }
 
-Write-Host "`n🧹 Proceso de limpieza de 7-Zip finalizado." -ForegroundColor Cyan
+Write-Host "`n Proceso de limpieza de 7-Zip finalizado." -ForegroundColor Cyan
